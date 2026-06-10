@@ -5,7 +5,7 @@ const CONFIG = {
   host:     'GlitteryMite40.aternos.me',  // ← your Aternos address
   port:     32039,                      // ← default MC port (change if different)
   username: 'AFK_Bot',                  // ← bot's username (offline mode)
-  version:  '1.20.1',                   // ← your server's MC version
+  version:  false,                   // ← your server's MC version
   reconnectDelay: 30_000,               // ms to wait before reconnecting
 };
 // ───────────────────────────────────────────────────────────────────────────
