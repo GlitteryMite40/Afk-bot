@@ -6,7 +6,7 @@ const CONFIG = {
   port:     32039,                      // ← default MC port (change if different)
   username: 'AFK_Bot',                  // ← bot's username (offline mode)
   version:  '1.20.1',                   // ← your server's MC version
-  reconnectDelay: 10_000,               // ms to wait before reconnecting
+  reconnectDelay: 30_000,               // ms to wait before reconnecting
 };
 // ───────────────────────────────────────────────────────────────────────────
 
@@ -79,7 +79,7 @@ function startAntiAFK() {
     ];
     actions[actionCounter % actions.length]();
     actionCounter++;
-  }, 5_000);
+  }, 5_000 + Math.random() * 3_000);
 
   // Look around: random yaw + pitch every 7 s
   lookInterval = setInterval(() => {
