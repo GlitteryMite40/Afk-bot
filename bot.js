@@ -97,6 +97,11 @@ function startAntiAFK() {
       log('⬆  Jumped.');
     }
   }, 15_000);
+  // Inside startAntiAFK(), add:
+setInterval(() => {
+  bot.setControlState('sneak', true);
+  setTimeout(() => bot.setControlState('sneak', false), 1000 + Math.random() * 1000);
+}, 20_000 + Math.random() * 10_000);
 }
 
 function walkDirection(dir, durationMs) {
