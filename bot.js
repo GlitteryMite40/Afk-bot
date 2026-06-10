@@ -4,7 +4,7 @@ const mineflayer = require('mineflayer');
 const CONFIG = {
   host:     'GlitteryMite40.aternos.me',  // ← your Aternos address
   port:     32039,                      // ← default MC port (change if different)
-  username: 'AFK_Bot',                  // ← bot's username (offline mode)
+  username: 'Abhishek',                  // ← bot's username (offline mode)
   version:  false,                   // ← your server's MC version
   reconnectDelay: 30_000,               // ms to wait before reconnecting
 };
